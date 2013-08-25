@@ -13,9 +13,8 @@
 				<a href = '#' id = 'titleLink'><b id = 'title'>MOVIE MUNCHERS</b></a>
 			</div>
 			<div>
-				<input id = 'searchMovie' type = 'text'  
-				onblur = "if (this.value == '') {$(this).addClass('tbBlur'); this.value = 'Search movies...';}"
-				onfocus = "if (this.value == 'Search movies...') {$(this).removeClass(); this.value = '';}"
+				<input id = 'searchMovie' type = 'text'
+				placeholder = "Munch on a movie..."
 				onkeydown ="if (event.keyCode == 13 && this.value.trim() != '' ) {pageNum = 1; searchString = $(this).val(); mode = 'search'; searchMovie();}">
 			</div>	
 		</div>
